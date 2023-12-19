@@ -20,7 +20,7 @@ def modify_csv():
         data = [row for row in reader]
         for row in data:
             # Modify the first column
-            row[0] = row[0][:-2]
+            row[0] = row[0][:-3]
             # Add a dot before the last three digits in the first column
             row[0] = row[0][:-3] + "." + row[0][-3:]
             # Modify the second column
